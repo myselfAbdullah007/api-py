@@ -1,0 +1,5 @@
+rules:
+  - id: insecure-deserialization
+    patterns:
+      - pattern: 'pickle.loads'
+        message: 'Avoid using pickle.loads for deserialization'
